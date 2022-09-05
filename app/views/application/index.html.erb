@@ -1,0 +1,26 @@
+<div data-controller="toggle" data-toggle-change-class="hidden">
+  <button data-action="click->toggle#toggle">Toggle</button>
+  <div data-toggle-target="hide" >Hello, toggling will hide this.</div>
+</div>
+
+
+<div data-controller="alert">
+  <button data-action="click->alert#show">Alert me!</button>
+</div>
+
+<div data-controller="greeter">
+  <input type="text" data-greeter-target="name">
+  <button data-action="click->greeter#greet">Greet</button>
+  <div data-greeter-target="output"></div>
+</div>
+
+<div id="options" data-controller="visibility">
+  <h1>Toggle Visibility</h1>
+
+  <button data-action="visibility#showTargets">Show All Elements</button>
+  <button data-action="visibility#hideTargets">Hide All Elements</button>
+  <button data-action="visibility#toggleTargets">Toggle Element</button>
+
+  <p data-visibility-target="hideable">This is hideable</p>
+  <p data-visibility-target="hideable" hidden> The stealthy thing</p>
+</div>
